@@ -1,0 +1,226 @@
+/* ****** CUSTOM PROPS ****** */
+:root{
+    --first-color:rgb(204, 219, 220);
+    --first-color-alpha:rgba(204, 219, 220,0.65);
+    --second-color:rgb(71, 33, 131);
+    --second-color-alpha:rgba(71, 33, 131,0.75);
+    --third-color:rgb(75, 86, 210);
+    --third-color-alpha:rgba(75, 86, 210,0.75);
+
+    --link-color:rgb(178, 160, 207);
+    --link-color-alpha:rgba(241, 246, 245,0.75);
+
+    --bg-color:rgb(226, 234, 252);
+    --bg-color-alpha:rgba(226, 234, 252,0.1);
+}
+/* ****** Reset Styles ****** */
+a{
+    color: var(--link-color);
+    transition: all .3s ease-out 0s;
+}
+a:hover{
+    color: var(--bs-white);
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2{
+    color: #ffffff;
+    text-shadow: 2px 2px gray, 3px 3px 6px rgb(0, 0, 0);
+}
+h3, p {
+    font-family: 'Hind', sans-serif;
+    color: var(--first-color);
+}
+h3{
+    padding: 5px;
+}
+#seccion-sitios-responsive>div>article>i, .violet-tittle, .violet-tittle+p{
+    color: var(--third-color);
+}
+/* ****** Bs Styles ****** */
+.bg-dark{
+    background-color: var(--second-color) !important;
+}
+.bg-light{
+    background-color: rgb(224, 231, 229) !important;
+}
+.bg-primary{
+    background-color: var(--second-color-alpha) !important;
+    backdrop-filter: blur(7px);
+}
+
+.navbar{
+    --bs-navbar-toggler-focus-width: 0.15rem;
+    --bs-navbar-toggler-border-color: rgba(204, 219, 220, 0.55) ;
+}
+
+.nav-item{
+    transition:all .3s ease-out .1s;
+    margin-top:.5rem;
+    padding-left: .3rem;
+}
+.nav-item:hover{
+    background-color: var(--first-color);
+}
+
+.nav-link, .active{
+    color: var(--link-color) !important;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: var(--bs-white) !important;
+}
+
+/* ****** My Styles ****** */
+.bg-blur{  
+    background-color: var(--bg-color-alpha);
+    border-radius: 5px;
+    animation: scale-y-blur 1s ease-out 0s forwards;
+}
+.bg-custom{
+    background-image: url(../imgs/bg-principal.jpg);
+    opacity: 15%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: bgIn 1s ease-out 0s;
+    border-bottom: 2px solid var(--link-color);
+}
+.bg-gradient-blue-lgtblue{
+    background-image: linear-gradient(135deg,rgb(75, 86, 210), rgb(189, 50, 70));
+}
+.boton-descargar-cv{
+    text-decoration: none;
+    color: var(--second-color);
+    background-color: var(--first-color-alpha);
+    padding: 10px;
+    border-radius: 25px;
+}
+.boton-descargar-cv:hover{
+    background-color: var(--bs-white);
+    color: black;
+}
+.icon-tittle:hover{
+    animation: rotateIcon .3s ease-out 0s forwards;
+}
+.img-principal{
+    transform: scale(.7);
+}
+.layer{
+    z-index: 1;
+}
+.nombre-titulo{
+    display: block;
+    letter-spacing: 2px
+}
+.nombre-titulo:hover{
+    animation: espaciado .7s ease 0s;
+}
+.principal>h2+p, .principal>h2{
+    color: var(--third-color);
+}
+.principal>h2{
+    text-decoration:underline;
+    text-shadow: none;
+}
+.prj-card, .prj-card>a>img{
+    max-width: 300px;
+}
+.prj-card{
+    opacity: .7;
+}
+.prj-card:hover{
+    opacity: 1;
+    transition: all .3s;
+}
+.titulo-principal::after{
+    content: '<>Frontend developer Jr</>';
+    font-size: calc(1.3rem + 0.6vw) ;
+    color: #ECF87F;
+    text-shadow: 0px 0px 10px;
+    letter-spacing: 3px
+}
+
+.resize-logo{
+    width: 63px;
+}
+.resize-bg-principal{
+    width: 100%;
+    height: 100%;
+    border: 20px solid var(--link-color);
+}
+#seccion-principal{
+    height: 90vh;
+}
+
+.white-space{
+    opacity: 1%;
+    height: 15rem;
+}
+
+/* ****** My Keyframes ****** */
+@keyframes espaciado{
+    0%{letter-spacing: 2px;}
+    50%{letter-spacing: 7px}
+    100%{letter-spacing: 2px}
+}
+@keyframes rotateIcon{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(15deg);}
+    /* 100%{transform: rotate(0deg);} */
+}
+@keyframes aparicionFond{
+    0%{transform: scaleY(0);}
+    100%{transform: scaleY(1);}
+}
+@keyframes bgIn{
+    0%{transform: translateY(90rem);}
+    100%{transform: translateY(0rem);}
+}
+@keyframes scale-y-blur{
+    0%{transform: scale(0);}
+    70%{
+        transform: scale(1.1);
+        backdrop-filter: blur(0px)
+    }
+    100%{
+        transform: scale(1);
+        backdrop-filter: blur(10px);
+    }
+}
+
+
+
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .nav-item:hover{
+        background-color: transparent;
+    }
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    
+}
