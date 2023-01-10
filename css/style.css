@@ -80,7 +80,7 @@ h3{
 }
 .bg-custom{
     background-image: url(../imgs/bg-principal.jpg);
-    opacity: 15%;
+    opacity: 10%;
     position: absolute;
     top: 0;
     right: 0;
@@ -158,7 +158,7 @@ h3{
 
 .white-space{
     opacity: 1%;
-    height: 15rem;
+    height: 2.2rem;
 }
 
 /* ****** My Keyframes ****** */
