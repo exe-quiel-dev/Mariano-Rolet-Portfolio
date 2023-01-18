@@ -109,6 +109,9 @@ h3{
 .img-principal{
     transform: scale(.7);
 }
+#lang{
+    /* max-width: 50%; */
+}
 .layer{
     z-index: 1;
 }
@@ -155,7 +158,9 @@ h3{
 #seccion-principal{
     height: 90vh;
 }
-
+.skills{
+    color: var(--second-color);
+}
 .white-space{
     opacity: 1%;
     height: 2.2rem;
