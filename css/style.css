@@ -49,7 +49,9 @@ h3{
     background-color: var(--second-color-alpha) !important;
     backdrop-filter: blur(7px);
 }
-
+.certif{
+    max-width: 35%;
+}
 .navbar{
     --bs-navbar-toggler-focus-width: 0.15rem;
     --bs-navbar-toggler-border-color: rgba(204, 219, 220, 0.55) ;
