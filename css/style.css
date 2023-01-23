@@ -131,8 +131,8 @@ h3{
     text-decoration:underline;
     text-shadow: none;
 }
-.prj-card, .prj-card>a>img{
-    max-width: 300px;
+.prj-card, .prj-card>a, .prj-card>a>img{
+    max-width: 18.75rem;
 }
 .prj-card{
     opacity: .7;
